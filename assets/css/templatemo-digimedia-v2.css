@@ -39,7 +39,7 @@ h5,
 h6,
 p,
 blockquote,
-divpre,
+divpre,
 a,
 abbr,
 acronym,
@@ -55,7 +55,7 @@ img,
 ins,
 kbd,
 q,
-s,
+s,
 samp,
 small,
 strike,
@@ -74,7 +74,7 @@ dd,
 ol,
 ul,
 li,
-figure,
+figure,
 header,
 nav,
 section,
@@ -97,7 +97,7 @@ figcaption {
 
 /* ---- .grid-item ---- */
 .grid-sizer,
-.grid-item {
+.grid-item {
     width: 50%;
 }
 
@@ -196,7 +196,7 @@ img {
 global styles
 --------------------------------------------- */
 html,
-body {
+body {
     background: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -288,8 +288,8 @@ header
 --------------------------------------------- */
 .pre-header {
     background-color: #efefef;
-    height: 60px;
-    padding: 15px 0px;
+    padding: 0px;
+    height: auto;
 }
 
 .pre-header ul li {
@@ -351,7 +351,7 @@ header
 }
 
 .background-header .logo,
-.background-header .main-nav .nav li a {
+.background-header .main-nav .nav li a {
     color: #fff;
 }
 
@@ -447,13 +447,13 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a ,
-.background-header .main-nav .nav li:last-child a {
+.background-header .main-nav .nav li:last-child a {
     padding: 0px 20px !important;
     font-weight: 400;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
-.background-header .main-nav .nav li:last-child a:hover {
+.background-header .main-nav .nav li:last-child a:hover {
     color: #fff !important;
 }
 
@@ -474,12 +474,12 @@ header
 }
 
 .header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
+.header-area .main-nav .nav li a.active {
     color: #fe664e!important;
 }
 
 .background-header .main-nav .nav li:hover a,
-.background-header .main-nav .nav li a.active {
+.background-header .main-nav .nav li a.active {
     color: #fe664e!important;
     opacity: 1;
 }
@@ -576,8 +576,8 @@ header
 }
 
 .header-area .main-nav .menu-trigger span,
-.header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span:before,
+.header-area .main-nav .menu-trigger span:after {
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -591,13 +591,13 @@ header
 }
 
 .background-header .main-nav .menu-trigger span,
-.background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header .main-nav .menu-trigger span:before,
+.background-header .main-nav .menu-trigger span:after {
     background-color: #2a2a2a;
 }
 
 .header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span:after {
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -612,12 +612,12 @@ header
 }
 
 .background-header .main-nav .menu-trigger span:before,
-.background-header .main-nav .menu-trigger span:after {
+.background-header .main-nav .menu-trigger span:after {
     background-color: #2a2a2a;
 }
 
 .header-area .main-nav .menu-trigger span:before,
-.header-area .main-nav .menu-trigger span:after {
+.header-area .main-nav .menu-trigger span:after {
     content: "";
 }
 
@@ -643,8 +643,8 @@ header
 }
 
 .header-area .main-nav .menu-trigger.active span,
-.header-area .main-nav .menu-trigger.active span:before,
-.header-area .main-nav .menu-trigger.active span:after {
+.header-area .main-nav .menu-trigger.active span:before,
+.header-area .main-nav .menu-trigger.active span:after {
     background-color: transparent;
     width: 100%;
 }
@@ -698,12 +698,12 @@ header
 
 @media (max-width: 992px) {
     .header-area .main-nav .nav li:last-child  ,
-      .background-header .main-nav .nav li:last-child {
+    .background-header .main-nav .nav li:last-child {
         display: none;
     }
 
     .header-area .main-nav .nav li:nth-child(6),
-      .background-header .main-nav .nav li:nth-child(6) {
+    .background-header .main-nav .nav li:nth-child(6) {
         padding-right: 0px;
     }
 
@@ -726,7 +726,7 @@ header
     }
 
     .header-area.header-sticky .nav li a:hover,
-      .header-area.header-sticky .nav li a.active {
+    .header-area.header-sticky .nav li a.active {
         color: #fe664e!important;
         opacity: 1;
     }
@@ -950,6 +950,7 @@ preloader
 /* ---------------------------------------------
 Banner Style
 --------------------------------------------- */
+/* Add your CSS styles here */
 .main-banner {
     background-repeat: no-repeat;
     background-position: center center;
@@ -1497,7 +1498,7 @@ Free Quote
 }
 
 .free-quote .section-heading h6,
-.free-quote .section-heading h4 {
+.free-quote .section-heading h4 {
     color: #fff;
 }
 
@@ -1608,7 +1609,7 @@ Portfolio
 }
 
 .portfolio-item:hover .down-content h4,
-.portfolio-item:hover .down-content span {
+.portfolio-item:hover .down-content span {
     color: #fe664e;
 }
 
@@ -2055,7 +2056,7 @@ responsive
     }
 
     .last-features-item,
-      .last-skill-item {
+    .last-skill-item {
         margin-bottom: 0px !important;
     }
 
@@ -2160,10 +2161,10 @@ responsive
     }
 
     .our-portfolio .section-heading,
-      .about-us .section-heading,
-      .about-us .about-item,
-      .about-us p,
-      .about-us .main-green-button {
+    .about-us .section-heading,
+    .about-us .about-item,
+    .about-us p,
+    .about-us .main-green-button {
         text-align: center;
     }
 
