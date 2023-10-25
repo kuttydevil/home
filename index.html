@@ -679,7 +679,7 @@ https://templatemo.com/tm-568-digimedia
                                                                     </div>                                                                     
                                                                 </div>                                                                 
                                                             </div>                                                             
-<form name="contact" method="POST" data-netlify="true" action="/success">
+<form name="contact" method="POST" data-netlify="true">
   <input type="hidden" name="form-name" value="contact">
   <div class="container">
     <div class="row">
@@ -707,6 +707,25 @@ https://templatemo.com/tm-568-digimedia
     </div>
   </div>
 </form>
+<div id="popup" style="display: none;">Form submitted successfully!</div>
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Send the form data to Netlify using AJAX
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(e.target)).toString(),
+    })
+      .then(() => {
+        // Show a popup message on successful submission
+        document.getElementById("popup").style.display = "block";
+      })
+      .catch((error) => alert("Form submission failed: " + error));
+  });
+</script>
+
 
       </div>
     </div>
