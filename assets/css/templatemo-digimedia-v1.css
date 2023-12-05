@@ -1,4 +1,4 @@
-/*
+*
 
 TemplateMo 568 DigiMedia
 
@@ -437,7 +437,7 @@ header
   position: absolute;
   left: 0px;
   right: 0px;
-  z-index: 100;
+  z-index: 50002;
   height: 100px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -485,7 +485,7 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
-  z-index: 999;
+  z-index: 50001;
 }
 
 .header-area .main-nav .nav li {
